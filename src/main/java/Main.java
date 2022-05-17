@@ -19,7 +19,7 @@ public class Main {
         l3.add(1);
         l3.add(7);
         LinkedList<Integer> l4 = new LinkedList<>();
-        l4.add(2);
+        l4.add(4);
         l4.add(9);
         l4.add(5);
         System.out.println(SumLists.forwardSumLists(l3,l4));

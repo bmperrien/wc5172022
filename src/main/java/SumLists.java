@@ -61,11 +61,11 @@ Output: 9 -> 1 -> 2. That is, 912.
         return sum;
     }
 
+
     
-    //Doesn't work properly when first digit > 10
     public static LinkedList<Integer> forwardSumLists(LinkedList<Integer> l1, LinkedList<Integer> l2){
         LinkedList<Integer> sum = new LinkedList<>();
-        if(l1.getFirst() + l2.getFirst() > 10){
+        if(l1.getFirst() + l2.getFirst() >= 10){
             sum.add(1);
             sum.add(l1.getFirst() + l2.getFirst() - 10);
         }else{
@@ -78,7 +78,7 @@ Output: 9 -> 1 -> 2. That is, 912.
             if(l1.get(i) + l2.get(i) < 10){
                 sum.add(l1.get(i) + l2.get(i));
             }else{
-                sum.set(i-1, sum.get(i-1) + 1);
+                sum.set(i, sum.get(i) + 1);
                 sum.add(l1.get(i) + l2.get(i) - 10);
             }
             i++;
