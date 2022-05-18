@@ -24,5 +24,16 @@ public class Main {
         l4.add(5);
         System.out.println(SumLists.forwardSumLists(l3,l4));
 
+
+        StackMin stack = new StackMin();
+        stack.push(50);
+        stack.getMin();
+        stack.push(70);
+        stack.getMin();
+        stack.push(2);
+        stack.getMin();
+        stack.pop();
+        stack.getMin();
+
     }
 }

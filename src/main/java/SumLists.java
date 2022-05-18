@@ -62,7 +62,7 @@ Output: 9 -> 1 -> 2. That is, 912.
     }
 
 
-    
+
     public static LinkedList<Integer> forwardSumLists(LinkedList<Integer> l1, LinkedList<Integer> l2){
         LinkedList<Integer> sum = new LinkedList<>();
         if(l1.getFirst() + l2.getFirst() >= 10){
